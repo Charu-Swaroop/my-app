@@ -1,0 +1,22 @@
+<div class="container">
+  <ag-grid-angular 
+  style="width: 100%; height: 200px;" 
+  class="ag-theme-fresh"
+  [rowData]="rowData" 
+  [columnDefs]="columnDefs"
+   [gridOptions]="gridOptions" 
+   [defaultColDef]="defaultColDef"
+   [enableSorting]="true"
+   [enableFilter]="true"
+   [animateRows]="true"
+
+  >
+  </ag-grid-angular>
+  <div>
+    <button   class="btn" (click)="onRemoveSelected()">Remove Selected</button>
+   
+</div>
+<div style="margin-top: 20px;">
+<app-add-target [targetGridOptions]="gridOptions"></app-add-target>
+</div>
+</div>
